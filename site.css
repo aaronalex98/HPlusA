@@ -1,0 +1,329 @@
+/* aaronalex98 */
+/* aaronalex1998@gmail.com */
+
+/* Mobile */
+@media screen and (max-width: 640px){
+
+html{
+  font-size: 16px;
+}
+
+header{
+  border-style: solid;
+  border-width: 1px;
+
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  padding: 0%;
+
+  font-size: 1rem;
+}
+
+/* Company Logo */
+header img{
+  width: 12%;
+  min-width: 40px;
+  max-width: 60px;
+}
+
+/* Company Title */
+header h1{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  width: 80%;
+  min-width: 230px;
+
+  font-size: 1.2em;
+  font-family: montserrat;
+}
+
+/* Hamburger Menu Icon */
+
+.menu-toggle{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  padding: 0% 1%;
+
+
+}
+
+.menu-toggle .topL{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+
+  width: 8vw;
+  height: 1px;
+  min-width: 25px;
+  max-width: 30px;
+
+  background-color: #000;
+
+  transition: all ease-in-out 300ms;
+}
+
+.menu-toggle .hamburger{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+
+  width: 8vw;
+  height: 1px;
+  min-width: 25px;
+  max-width: 30px;
+
+  background-color: #000;
+
+  transition: all ease-in-out 300ms;
+}
+
+.menu-toggle .botL{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+
+  width: 8vw;
+  height: 1px;
+  min-width: 25px;
+  max-width: 30px;
+
+  background-color: #000;
+
+  transition: all ease-in-out 300ms;
+}
+
+/* Centre line when Menu Open */
+.menu-toggle-open .hamburger{
+  opacity: 0;
+}
+
+/* Top Line when Menu Open */
+.menu-toggle-open .topL{
+  transform: translateY(10px) rotate(-45deg);
+}
+
+/* Bottom Line when Menu Open */
+.menu-toggle-open .botL{
+  transform: translateY(-10px) rotate(45deg);
+}
+
+
+/* Menu Box when Closed */
+header .menu{
+  /* border-style: solid;
+  border-width: 0px; */
+
+  width: 35%;
+  height: 0px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  right: 0%;
+  top: 61px;
+
+}
+
+header .menu-open{
+  border-style: solid;
+  border-width: 1px;
+
+  height: auto;
+}
+
+/* Menu Links */
+header .menu a{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  display: flex;
+  align-items: center;
+
+  padding: 20% 5%;
+
+  font-family: montserrat;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* End of Mobile */
+}
+
+
+/* Tablet */
+@media screen and (min-width: 641px) and (max-width: 900px){
+
+html{
+  font-size: 18px;
+}
+
+header{
+  border-style: solid;
+  border-width: 1px;
+
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+  padding: 1%;
+
+  font-size: 1rem;
+}
+
+/* Company Logo */
+header img{
+  width: 10%;
+  min-width: 40px;
+  max-width: 60px;
+}
+
+/* Company Title */
+header h1{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  width: 44%;
+  min-width: 280px;
+  max-width: 400px;
+
+  font-size: 1.3em;
+  font-family: montserrat;
+
+}
+
+/* Navigation Menu */
+header .menu{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 46%;
+  height: 60%;
+}
+
+header .menu a{
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0% 2%;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: montserrat;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+/* Hiding Menu toggle */
+header .menu-toggle{
+  display: none;
+}
+
+
+/* End of Tablet */
+}
+
+
+/* Desktop */
+@media screen and (min-width: 901px){
+
+html{
+  font-size: 18px;
+}
+
+header{
+  border-style: solid;
+  border-width: 1px;
+
+  display: flex;
+  align-items: center;
+
+  height: 10vh;
+  min-height: 60px;
+  max-height: 80px;
+  padding: 1%;
+
+  font-size: 1rem;
+}
+
+/* Company Logo */
+header img{
+  width: 5%;
+  min-width: 60px;
+  max-width: 80px;
+}
+
+/* Company Title */
+header h1{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  width: 55%;
+  min-width: 450px;
+  max-width: 600px;
+
+  font-size: 2em;
+  font-family: montserrat;
+}
+
+header .menu{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 50%;
+  height: 80%;
+}
+
+header .menu a{
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.1em;
+  font-family: montserrat;
+  text-decoration: none;
+}
+
+
+
+
+/* End of Tablet */
+}
