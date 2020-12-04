@@ -1,6 +1,12 @@
 /* aaronalex98 */
 /* aaronalex1998@gmail.com */
 
+:root {
+  --main: 'Inter', sans-serif;
+
+  --orange: #FF7814;
+}
+
 /* Mobile */
 @media screen and (max-width: 640px){
 
@@ -9,8 +15,8 @@ html{
 }
 
 header{
-  border-style: solid;
-  border-width: 1px;
+  /* border-style: solid;
+  border-width: 1px; */
 
   height: 60px;
 
@@ -37,7 +43,9 @@ header h1{
   min-width: 230px;
 
   font-size: 1.2em;
-  font-family: montserrat;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
 }
 
 /* Hamburger Menu Icon */
@@ -124,7 +132,7 @@ header .menu{
   /* border-style: solid;
   border-width: 0px; */
 
-  width: 35%;
+  width: 45%;
   height: 0px;
   overflow: hidden;
 
@@ -133,36 +141,83 @@ header .menu{
 
   position: absolute;
   right: 0%;
-  top: 61px;
+  top: 60px;
 
 }
 
 header .menu-open{
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px 0px 0px 1px;
 
   height: auto;
+
+  background-color: #fff;
 }
 
 /* Menu Links */
 header .menu a{
-  /* border-style: solid;
-  border-width: 1px; */
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
 
   display: flex;
   align-items: center;
 
-  padding: 20% 5%;
+  padding: 30px 5%;
 
   font-family: montserrat;
   text-decoration: none;
 }
 
 
+/* MAIN */
+
+/* Banner */
+main .banner{
+  /* border-style: solid;
+  border-width: 1px; */
+
+  height: 50vh;
+  min-height: 300px;
+  max-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 5%;
+
+  background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.8)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+
+  background-size: cover;
+  background-position: left;
+
+  font-size: 1rem;
+}
+
+/* Banner - Tagline */
+
+main .banner p{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
 
 
 
+  padding: 2% 0%;
 
+  font-family: var(--main);
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+
+}
 
 
 /* End of Mobile */
@@ -183,7 +238,7 @@ header{
   display: flex;
   align-items: center;
 
-  height: 80px;
+  height: 60px;
   padding: 1%;
 
   font-size: 1rem;
@@ -201,12 +256,14 @@ header h1{
   /* border-style: solid;
   border-width: 1px; */
 
-  width: 44%;
+  width: 46%;
   min-width: 280px;
   max-width: 400px;
 
-  font-size: 1.3em;
-  font-family: montserrat;
+  font-size: 1.4em;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
 
 }
 
@@ -219,7 +276,7 @@ header .menu{
   justify-content: space-around;
   align-items: center;
 
-  width: 46%;
+  width: 44%;
   height: 60%;
 }
 
@@ -232,13 +289,14 @@ header .menu a{
   width: 100%;
   height: 100%;
 
-  padding: 0% 2%;
+  padding: 0% 1%;
 
   align-items: center;
   justify-content: center;
 
-  font-family: montserrat;
-  font-size: 0.8em;
+  font-family: var(--main);
+  font-weight: 300;
+  font-size: 0.9em;
   text-decoration: none;
 }
 
@@ -246,6 +304,53 @@ header .menu a{
 header .menu-toggle{
   display: none;
 }
+
+/* MAIN */
+
+/* Banner */
+main .banner{
+  border: solid 1px;
+
+  height: 80vh;
+  min-height: 200px;
+  max-height: 380px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 5%;
+
+  background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.8)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+
+  background-size: cover;
+  background-position: left;
+
+  font-size: 1rem;
+}
+
+/* Banner - Tagline */
+main .banner p{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
 
 
 /* End of Tablet */
@@ -272,6 +377,8 @@ header{
   padding: 1%;
 
   font-size: 1rem;
+
+  background-color: #FEFEFF;
 }
 
 /* Company Logo */
@@ -291,7 +398,9 @@ header h1{
   max-width: 600px;
 
   font-size: 2em;
-  font-family: montserrat;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
 }
 
 header .menu{
@@ -318,8 +427,10 @@ header .menu a{
   width: 100%;
 
   font-size: 1.1em;
-  font-family: montserrat;
+  font-family: var(--main);
+  font-weight: 300;
   text-decoration: none;
+  color: #000000;
 }
 
 
