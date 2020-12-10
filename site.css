@@ -170,6 +170,9 @@ header .menu a{
 
 
 /* MAIN */
+main{
+  font-size: 1rem;
+}
 
 /* Banner */
 main .banner{
@@ -178,7 +181,7 @@ main .banner{
 
   height: 50vh;
   min-height: 300px;
-  max-height: 400px;
+  max-height: 350px;
 
   display: flex;
   justify-content: center;
@@ -197,11 +200,9 @@ main .banner{
   background-size: cover;
   background-position: left;
 
-  font-size: 1rem;
 }
 
 /* Banner - Tagline */
-
 main .banner p{
   border-style: solid;
   border-width: 0px 0px 4px 0px;
@@ -216,12 +217,120 @@ main .banner p{
   font-weight: 400;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
+  text-align: center;
+}
+
+/* Our Vision */
+main .desc-block{
+  /* border: solid 1px; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 40vh;
+  min-height: 250px;
+  max-height: 280px;
+
+  padding: 5% 4%;
+
+  font-family: var(--main);
 
 }
+
+main .desc-block a{
+  text-decoration: none;
+}
+
+main .desc-block h2{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--orange);
+
+  padding: 2% 0%;
+}
+
+main .desc-block p{
+  font-size: 1em;
+  font-weight: 200;
+}
+
+/* Home Furniture Background */
+main #home_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
+
+main #home_furn p{
+  color: #fff;
+}
+
+/* Institutional Furniture BG */
+main #insti_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: bottom;
+}
+
+main #insti_furn p{
+  color: #fff;
+}
+
+
+/* Commercial Furniture BG */
+main #comm_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: bottom;
+}
+
+main #comm_furn p{
+  color: #fff;
+}
+
+
 
 
 /* End of Mobile */
 }
+
+
+
+
+
+
+
+
 
 
 /* Tablet */
@@ -232,8 +341,8 @@ html{
 }
 
 header{
-  border-style: solid;
-  border-width: 1px;
+  /* border-style: solid;
+  border-width: 1px; */
 
   display: flex;
   align-items: center;
@@ -309,17 +418,17 @@ header .menu-toggle{
 
 /* Banner */
 main .banner{
-  border: solid 1px;
+  /* border: solid 1px; */
 
   height: 80vh;
   min-height: 200px;
-  max-height: 380px;
+  max-height: 350px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 0% 5%;
+  padding: 0% 3%;
 
   background: /* top, transparent red, faked with gradient */
       linear-gradient(
@@ -344,17 +453,127 @@ main .banner p{
   padding: 2% 0%;
 
   font-family: var(--main);
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 400;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
 }
 
 
+/* Our Vision */
+main .desc-block{
+  /* border: solid 1px; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 25vh;
+  min-height: 250px;
+  max-height: 400px;
+
+  padding: 5% 4%;
+
+  font-family: var(--main);
+}
+
+main .desc-block h2{
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--orange);
+
+  padding: 2% 0%;
+}
+
+main .desc-block p{
+  font-size: 1em;
+  font-weight: 200;
+}
+
+main .desc-block a{
+  text-decoration: none;
+}
+
+/* Home Furniture Background */
+main #home_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #home_furn p{
+  color: #fff;
+}
+
+/* Institutional Furniture BG */
+main #insti_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #insti_furn p{
+  color: #fff;
+}
+
+
+/* Commercial Furniture BG */
+main #comm_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #comm_furn p{
+  color: #fff;
+}
+
+
+
+
+
 
 
 /* End of Tablet */
 }
+
+
+
+
+
+
+
+
 
 
 /* Desktop */
@@ -365,8 +584,8 @@ html{
 }
 
 header{
-  border-style: solid;
-  border-width: 1px;
+  /* border-style: solid;
+  border-width: 1px; */
 
   display: flex;
   align-items: center;
@@ -393,9 +612,9 @@ header h1{
   /* border-style: solid;
   border-width: 1px; */
 
-  width: 55%;
+  width: 60%;
   min-width: 450px;
-  max-width: 600px;
+  max-width: 700px;
 
   font-size: 2em;
   font-family: var(--main);
@@ -426,15 +645,176 @@ header .menu a{
   height: 100%;
   width: 100%;
 
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: var(--main);
   font-weight: 300;
   text-decoration: none;
   color: #000000;
 }
 
+/* Hiding Menu toggle */
+header .menu-toggle{
+  display: none;
+}
 
 
 
-/* End of Tablet */
+/* * MAIN * */
+main{
+  font-size: 1.2rem;
+
+}
+
+/* Banner */
+main .banner{
+  /* border: solid 1px; */
+
+  height: 80vh;
+  min-height: 250px;
+  max-height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 2%;
+
+  background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.8)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+
+  background-size: cover;
+  background-position: left;
+
+}
+
+/* Banner - Tagline */
+main .banner p{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
+
+  padding: 2% 0%;
+
+  width: auto;
+
+  font-family: var(--main);
+  font-size: 2.8em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+}
+
+/* Our Vision */
+main .desc-block{
+  /* border: solid 1px; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 50vh;
+  min-height: 250px;
+  max-height: 400px;
+
+  padding: 5% 4%;
+
+  font-family: var(--main);
+}
+
+main .desc-block h2{
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--orange);
+
+  padding: 1% 0%;
+}
+
+main .desc-block p{
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+main .desc-block a{
+  text-decoration: none;
+}
+
+/* Home Furniture Background */
+main #home_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #home_furn p{
+  color: #fff;
+}
+
+/* Institutional Furniture BG */
+main #insti_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #insti_furn p{
+  color: #fff;
+}
+
+
+/* Commercial Furniture BG */
+main #comm_furn{
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-color: var(--orange);
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+}
+
+main #comm_furn p{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* End of Desktop */
 }
