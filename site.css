@@ -7,11 +7,22 @@
   --orange: #FF7814;
 }
 
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
 /* Mobile */
 @media screen and (max-width: 640px){
 
-html{
-  font-size: 16px;
+body{
+  font-size: 1rem;
 }
 
 header{
@@ -24,14 +35,13 @@ header{
   align-items: center;
   padding: 0%;
 
-  font-size: 1rem;
 }
 
 /* Company Logo */
 header img{
   width: 12%;
   min-width: 40px;
-  max-width: 60px;
+  max-width: 50px;
 }
 
 /* Company Title */
@@ -169,11 +179,6 @@ header .menu a{
 }
 
 
-/* MAIN */
-main{
-  font-size: 1rem;
-}
-
 /* Banner */
 main .banner{
   /* border-style: solid;
@@ -246,6 +251,7 @@ main .desc-block h2{
   font-size: 1.5em;
   font-weight: 600;
   color: var(--orange);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 
   padding: 2% 0%;
 }
@@ -257,9 +263,9 @@ main .desc-block p{
 
 /* Home Furniture Background */
 main #home_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
@@ -273,13 +279,14 @@ main #home_furn{
 
 main #home_furn p{
   color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Institutional Furniture BG */
 main #insti_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
@@ -294,14 +301,15 @@ main #insti_furn{
 
 main #insti_furn p{
   color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
 /* Commercial Furniture BG */
 main #comm_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
@@ -316,7 +324,48 @@ main #comm_furn{
 
 main #comm_furn p{
   color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+/* Our Products */
+
+/* Main */
+main > h2{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  box-sizing: border-box;
+  border-color: var(--orange);
+
+
+  min-height: 80px;
+  max-height: 100px;
+  height: 10vh;
+
+  padding: 0% 2%;
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--main);
+  font-size: 1.8em;
+  font-weight: 600;
+
+  background-color: #515050;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -333,11 +382,36 @@ main #comm_furn p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tablet */
 @media screen and (min-width: 641px) and (max-width: 900px){
 
-html{
-  font-size: 18px;
+body{
+  font-size: 1.2rem;
 }
 
 header{
@@ -350,7 +424,7 @@ header{
   height: 60px;
   padding: 1%;
 
-  font-size: 1rem;
+  font-size: 0.8em;
 }
 
 /* Company Logo */
@@ -441,7 +515,6 @@ main .banner{
   background-size: cover;
   background-position: left;
 
-  font-size: 1rem;
 }
 
 /* Banner - Tagline */
@@ -481,6 +554,7 @@ main .desc-block h2{
   font-size: 2em;
   font-weight: 600;
   color: var(--orange);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 
   padding: 2% 0%;
 }
@@ -558,8 +632,33 @@ main #comm_furn p{
   color: #fff;
 }
 
+/* Our Products */
 
+/* Page Headers */
+main > h2{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  border-color: var(--orange);
 
+  height: 8vh;
+  min-height: 80px;
+  max-height: 100px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0% 4%;
+
+  font-family: var(--main);
+  font-size: 1.8em;
+  font-weight: 600;
+
+  background-color: #515050;
+  color: #fff;
+
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
 
 
 
@@ -576,11 +675,30 @@ main #comm_furn p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Desktop */
 @media screen and (min-width: 901px){
 
-html{
-  font-size: 18px;
+body{
+  font-size: 1rem;
 }
 
 header{
@@ -594,8 +712,6 @@ header{
   min-height: 60px;
   max-height: 80px;
   padding: 1%;
-
-  font-size: 1rem;
 
   background-color: #FEFEFF;
 }
@@ -616,7 +732,7 @@ header h1{
   min-width: 450px;
   max-width: 700px;
 
-  font-size: 2em;
+  font-size: 2.2em;
   font-family: var(--main);
   font-weight: 400;
   color: var(--orange);
@@ -662,7 +778,6 @@ header .menu-toggle{
 /* * MAIN * */
 main{
   font-size: 1.2rem;
-
 }
 
 /* Banner */
@@ -731,6 +846,7 @@ main .desc-block h2{
   font-size: 2.5em;
   font-weight: 600;
   color: var(--orange);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 
   padding: 1% 0%;
 }
@@ -738,6 +854,7 @@ main .desc-block h2{
 main .desc-block p{
   font-size: 1.2em;
   font-weight: 200;
+
 }
 
 main .desc-block a{
@@ -808,6 +925,35 @@ main #comm_furn p{
   color: #fff;
 }
 
+
+/* Our Products */
+
+/* Page Headers */
+main > h2{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  border-color: var(--orange);
+
+
+  height: 20vh;
+  min-height: 100px;
+  max-height: 120px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0% 4%;
+
+  font-family: var(--main);
+  font-size: 2.5em;
+  font-weight: 600;
+
+  background-color: #515050;
+  color: #fff;
+
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
 
 
 
