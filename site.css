@@ -400,8 +400,6 @@ main .trusted_by_container h2{
 
 
 
-
-
 /* End of Mobile */
 }
 
@@ -903,7 +901,7 @@ main .desc-block{
   min-height: 250px;
   max-height: 400px;
 
-  padding: 5% 4%;
+  padding: 5% 2%;
 
   font-family: var(--main);
 }
@@ -1008,7 +1006,7 @@ main > h2{
   display: flex;
   align-items: center;
 
-  padding: 0% 4%;
+  padding: 0% 2%;
 
   font-family: var(--main);
   font-size: 2.5em;
@@ -1022,6 +1020,38 @@ main > h2{
 }
 
 
+/* Our Products -> Trusted By */
+
+main .trusted_by_container{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  border-color: var(--orange);
+
+  display: flex;
+  flex-direction: row;
+
+  background-color: var(--grey);
+}
+
+main .trusted_by_container h2{
+  /* border: solid 1px; */
+
+  display: flex;
+  align-items: center;
+
+  padding: 0% 2%;
+
+  height: 20vh;
+  min-height: 120px;
+  max-height: 140px;
+  width: 15%;
+
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: var(--main);
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 
 
