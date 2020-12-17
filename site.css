@@ -5,6 +5,8 @@
   --main: 'Inter', sans-serif;
 
   --orange: #FF7814;
+
+  --grey: #515050;
 }
 
 html{
@@ -233,9 +235,9 @@ main .desc-block{
   justify-content: flex-start;
   align-items: center;
 
-  height: 40vh;
-  min-height: 250px;
-  max-height: 280px;
+  height: 30vh;
+  min-height: 200px;
+  max-height: 250px;
 
   padding: 5% 4%;
 
@@ -336,7 +338,6 @@ main #comm_furn p{
 main > h2{
   border-style: solid;
   border-width: 0px 20px 0px 0px;
-  box-sizing: border-box;
   border-color: var(--orange);
 
 
@@ -344,7 +345,7 @@ main > h2{
   max-height: 100px;
   height: 10vh;
 
-  padding: 0% 2%;
+  padding: 0% 4%;
 
   display: flex;
   align-items: center;
@@ -353,13 +354,44 @@ main > h2{
   font-size: 1.8em;
   font-weight: 600;
 
-  background-color: #515050;
+  background-color: var(--grey);
   color: #fff;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 
 }
 
 
+/* Our Products -> Trusted By */
+
+main .trusted_by_container{
+  border: solid 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .trusted_by_container h2{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  border-color: var(--orange);
+
+  height: 8vh;
+  min-height: 50px;
+  max-height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0% 4%;
+
+  font-family: var(--main);
+  font-size: 1.5em;
+  font-weight: 600;
+
+  color: #fff;
+  background-color: var(--grey);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -660,6 +692,40 @@ main > h2{
 
 }
 
+
+
+/* Our Products -> Trusted By */
+
+main .trusted_by_container{
+  border: solid 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main .trusted_by_container h2{
+  border-style: solid;
+  border-width: 0px 20px 0px 0px;
+  border-color: var(--orange);
+
+  height: 7vh;
+  min-height: 60px;
+  max-height: 70px;
+
+
+  display: flex;
+  align-items: center;
+
+  padding: 0% 4%;
+
+  font-family: var(--main);
+  font-size: 1.4em;
+  font-weight: 600;
+
+  color: #fff;
+  background-color: var(--grey);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 
 
