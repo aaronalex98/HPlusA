@@ -196,7 +196,7 @@ main .banner{
 
   padding: 0% 5%;
 
-  background: /* top, transparent red, faked with gradient */
+  background:
       linear-gradient(
         rgba(255, 255, 255, 0.1),
         rgba(0, 0, 0, 0.8)
@@ -204,8 +204,8 @@ main .banner{
       /* bottom, image */
       url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 
-  background-size: cover;
-  background-position: left;
+    background-size: cover;
+    background-position: left;
 
 }
 
@@ -235,8 +235,8 @@ main .desc-block{
   justify-content: flex-start;
   align-items: center;
 
-  height: 30vh;
-  min-height: 200px;
+  height: 25vh;
+  min-height: 150px;
   max-height: 250px;
 
   padding: 5% 4%;
@@ -249,17 +249,17 @@ main .desc-block a{
   text-decoration: none;
 }
 
-main .desc-block h2{
+main .desc-block h3{
   font-size: 1.5em;
   font-weight: 600;
   color: var(--orange);
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 main .desc-block p{
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 200;
 }
 
@@ -271,8 +271,8 @@ main #home_furn{
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -281,7 +281,7 @@ main #home_furn{
 
 main #home_furn p{
   color: #fff;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 /* Institutional Furniture BG */
@@ -292,8 +292,8 @@ main #insti_furn{
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -303,7 +303,7 @@ main #insti_furn{
 
 main #insti_furn p{
   color: #fff;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 
@@ -315,8 +315,8 @@ main #comm_furn{
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -326,7 +326,7 @@ main #comm_furn{
 
 main #comm_furn p{
   color: #fff;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 
@@ -337,13 +337,13 @@ main #comm_furn p{
 /* Main */
 main > h2{
   border-style: solid;
-  border-width: 0px 20px 0px 0px;
+  border-width: 0px 15px 0px 0px;
   border-color: var(--orange);
 
 
-  min-height: 80px;
-  max-height: 100px;
-  height: 10vh;
+  min-height: 60px;
+  max-height: 80px;
+  height: 8vh;
 
   padding: 0% 4%;
 
@@ -351,12 +351,12 @@ main > h2{
   align-items: center;
 
   font-family: var(--main);
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 600;
 
   background-color: var(--grey);
   color: #fff;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 
 }
 
@@ -372,7 +372,7 @@ main .trusted_by_container{
 
 main .trusted_by_container h2{
   border-style: solid;
-  border-width: 0px 20px 0px 0px;
+  border-width: 0px 15px 0px 0px;
   border-color: var(--orange);
 
   height: 8vh;
@@ -385,12 +385,12 @@ main .trusted_by_container h2{
   padding: 0% 4%;
 
   font-family: var(--main);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
 
   color: #fff;
   background-color: var(--grey);
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 
@@ -473,7 +473,7 @@ header h1{
   min-width: 280px;
   max-width: 400px;
 
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-family: var(--main);
   font-weight: 400;
   color: var(--orange);
@@ -571,22 +571,23 @@ main .desc-block{
   justify-content: flex-start;
   align-items: center;
 
-  height: 25vh;
-  min-height: 250px;
+  height: 20vh;
+  min-height: 200px;
   max-height: 400px;
 
-  padding: 5% 4%;
+  padding: 5% 2%;
 
   font-family: var(--main);
 }
 
-main .desc-block h2{
+
+main .desc-block h3{
   font-size: 2em;
   font-weight: 600;
   color: var(--orange);
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 main .desc-block p{
@@ -600,14 +601,14 @@ main .desc-block a{
 
 /* Home Furniture Background */
 main #home_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -621,14 +622,14 @@ main #home_furn p{
 
 /* Institutional Furniture BG */
 main #insti_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -643,14 +644,14 @@ main #insti_furn p{
 
 /* Commercial Furniture BG */
 main #comm_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -677,16 +678,16 @@ main > h2{
   display: flex;
   align-items: center;
 
-  padding: 0% 4%;
+  padding: 0% 2%;
 
   font-family: var(--main);
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 600;
 
   background-color: #515050;
   color: #fff;
 
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 
 }
 
@@ -714,7 +715,7 @@ main .trusted_by_container h2{
   display: flex;
   align-items: center;
 
-  padding: 0% 4%;
+  padding: 0% 2%;
 
   font-family: var(--main);
   font-size: 1.4em;
@@ -724,6 +725,20 @@ main .trusted_by_container h2{
   background-color: var(--grey);
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -778,6 +793,8 @@ header{
   padding: 1%;
 
   background-color: #FEFEFF;
+
+  box-shadow: 1px 7px 11px -1px rgba(0,0,0,0.75);
 }
 
 /* Company Logo */
@@ -897,22 +914,36 @@ main .desc-block{
   justify-content: flex-start;
   align-items: center;
 
-  height: 50vh;
-  min-height: 250px;
-  max-height: 400px;
+  height: 20vh;
+  min-height: 200px;
+  max-height: 300px;
 
   padding: 5% 2%;
 
   font-family: var(--main);
+
+
+  /* transition: border 0.3s ease-out; */
+
 }
 
-main .desc-block h2{
+main .desc-block:hover{
+  /* border: solid 2px;
+  border-color: var(--orange); */
+}
+
+main .desc-block:hover h3{
+  font-size: 2.6em;
+}
+
+main .desc-block h3{
   font-size: 2.5em;
   font-weight: 600;
   color: var(--orange);
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
 
   padding: 1% 0%;
+  transition: font-size 0.3s ease-in-out;
 }
 
 main .desc-block p{
@@ -927,14 +958,14 @@ main .desc-block a{
 
 /* Home Furniture Background */
 main #home_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/189295/pexels-photo-189295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -948,14 +979,14 @@ main #home_furn p{
 
 /* Institutional Furniture BG */
 main #insti_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -970,14 +1001,14 @@ main #insti_furn p{
 
 /* Commercial Furniture BG */
 main #comm_furn{
-  border-width: 4px 0px 0px 0px;
+  /* border-width: 4px 0px 0px 0px;
   border-style: solid;
-  border-color: var(--orange);
+  border-color: var(--orange); */
 
   background:
       linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       /* bottom, image */
       url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -999,7 +1030,7 @@ main > h2{
   border-color: var(--orange);
 
 
-  height: 20vh;
+  height: 15vh;
   min-height: 100px;
   max-height: 120px;
 
@@ -1009,13 +1040,13 @@ main > h2{
   padding: 0% 2%;
 
   font-family: var(--main);
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 600;
 
   background-color: #515050;
   color: #fff;
 
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 
 }
 
@@ -1041,18 +1072,17 @@ main .trusted_by_container h2{
 
   padding: 0% 2%;
 
-  height: 20vh;
-  min-height: 120px;
-  max-height: 140px;
+  height: 18vh;
+  min-height: 100px;
+  max-height: 120px;
   width: 15%;
 
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 600;
   font-family: var(--main);
   color: #fff;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
-
 
 
 
