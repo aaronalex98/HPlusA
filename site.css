@@ -75,7 +75,6 @@ header h1{
 
   padding: 0% 1%;
 
-
 }
 
 .menu-toggle .topL{
@@ -352,7 +351,7 @@ main > h2{
 
   font-family: var(--main);
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 400;
 
   background-color: var(--grey);
   color: #fff;
@@ -394,7 +393,42 @@ main .trusted_by_container h2{
 }
 
 
+/* Home Furniture Page > Categories */
+main section .categories a{
+  text-decoration: none;
+  color: #000;
+}
 
+main section .categories{
+  /* border: solid 1px; */
+
+  padding: 0% 4%;
+
+  height: 15vh;
+  min-height: 90px;
+  max-height: 120px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+main section .categories h3{
+  font-size: 1.5em;
+  font-weight: 600;
+
+  font-family: var(--main);
+}
+
+main section .categories p{
+  font-size: 0.8em;
+  font-weight: 200;
+
+  font-family: var(--main);
+}
+
+
+/* ABOUT US PAGE */
 
 
 
@@ -727,6 +761,40 @@ main .trusted_by_container h2{
 }
 
 
+/* Home Furniture Page > Categories */
+main section .categories a{
+  text-decoration: none;
+  color: #000;
+}
+
+main section .categories{
+  /* border: solid 1px; */
+
+  padding: 0% 2%;
+
+  height: 10vh;
+  min-height: 150px;
+  max-height: 180px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+main section .categories h3{
+  font-size: 2em;
+  font-weight: 600;
+
+  font-family: var(--main);
+}
+
+main section .categories p{
+  font-size: 1em;
+  font-weight: 200;
+
+  font-family: var(--main);
+}
+
 
 
 
@@ -794,7 +862,7 @@ header{
 
   background-color: #FEFEFF;
 
-  box-shadow: 1px 7px 11px -1px rgba(0,0,0,0.75);
+  /* box-shadow: 1px 7px 11px -1px rgba(0,0,0,0.75); */
 }
 
 /* Company Logo */
@@ -1084,6 +1152,41 @@ main .trusted_by_container h2{
   /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
+
+/* Home Furniture Page > Categories */
+main section .categories a{
+  text-decoration: none;
+  color: #000;
+}
+
+main section .categories{
+  /* border: solid 1px; */
+
+  padding: 0% 2%;
+
+  height: 30vh;
+  min-height: 180px;
+  max-height: 200px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+main section .categories h3{
+  font-size: 2.5em;
+  font-weight: 600;
+
+  font-family: var(--main);
+}
+
+main section .categories p{
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 1% 0%;
+
+  font-family: var(--main);
+}
 
 
 
