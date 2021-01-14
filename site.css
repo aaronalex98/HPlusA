@@ -429,8 +429,45 @@ main section .categories p{
 
 
 /* ABOUT US PAGE */
+main .about p{
+  padding: 4% 4% 2%;
 
+  font-size: 0.8em;
+  font-weight: 200;
+  font-family: var(--main);
+}
 
+/* The Team section */
+main .about div{
+  padding: 8% 0%;
+}
+
+main .about div h3{
+  font-size: 1.4em;
+  font-weight: 600;
+
+  font-family: var(--main);
+
+  padding: 1% 4%;
+}
+
+/* Individual Founders Info */
+main .about div .ind_found{
+  padding: 2% 4%;
+}
+
+main .about div .ind_found h4{
+  font-size: 1em;
+  font-weight: 200;
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+}
+
+main .about div .ind_found img{
+  width: 80%;
+}
 
 
 
@@ -795,6 +832,48 @@ main section .categories p{
   font-family: var(--main);
 }
 
+
+
+/* ABOUT US PAGE */
+main .about p{
+  padding: 2% 2%;
+
+  font-size: 1em;
+  font-weight: 200;
+  font-family: var(--main);
+}
+
+/* The Team section */
+main .about div{
+  padding: 4% 0%;
+}
+
+main .about div h3{
+  font-size: 2em;
+  font-weight: 600;
+
+  font-family: var(--main);
+
+  padding: 1% 2%;
+}
+
+/* Individual Founders Info */
+main .about div .ind_found{
+  padding: 2% 2%;
+}
+
+main .about div .ind_found h4{
+  font-size: 1.4em;
+  font-weight: 200;
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+}
+
+main .about div .ind_found img{
+  width: 80%;
+}
 
 
 
@@ -1186,6 +1265,53 @@ main section .categories p{
   padding: 1% 0%;
 
   font-family: var(--main);
+}
+
+
+
+/* ABOUT US PAGE */
+main .about p{
+  padding: 2% 2%;
+
+  font-size: 1.2em;
+  font-weight: 200;
+  font-family: var(--main);
+}
+
+/* The Team section */
+main .about div{
+  padding: 2% 0%;
+}
+
+main .about div h3{
+  font-size: 2.5em;
+  font-weight: 600;
+
+  font-family: var(--main);
+
+  padding: 0% 2%;
+}
+
+/* Individual Founders Info */
+main .about div .ind_found{
+  padding: 2% 2%;
+
+  width: 46%;
+  display: inline;
+  float: left;
+}
+
+main .about div .ind_found h4{
+  font-size: 1.6em;
+  font-weight: 200;
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+}
+
+main .about div .ind_found img{
+  width: 90%;
 }
 
 
