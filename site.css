@@ -6,7 +6,7 @@
 
   --orange: #FF7814;
 
-  --grey: #515050;
+  --grey: #343434;
 }
 
 html{
@@ -179,6 +179,9 @@ header .menu a{
   text-decoration: none;
 }
 
+main {
+  min-height: 80vh;
+}
 
 /* Banner */
 main .banner{
@@ -446,6 +449,8 @@ main .about div h3{
   font-size: 1.4em;
   font-weight: 600;
 
+  text-align: center;
+
   font-family: var(--main);
 
   padding: 1% 4%;
@@ -454,11 +459,15 @@ main .about div h3{
 /* Individual Founders Info */
 main .about div .ind_found{
   padding: 2% 4%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .about div .ind_found h4{
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 400;
 
   padding: 2% 0%;
 
@@ -466,8 +475,186 @@ main .about div .ind_found h4{
 }
 
 main .about div .ind_found img{
-  width: 80%;
+  width: 90%;
 }
+
+
+
+/* Contact Us Page */
+
+/* Hero Section */
+main .hero{
+  /* border: solid 1px; */
+
+  height: 60vh;
+  min-height: 150px;
+  max-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 3%;
+
+  background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      /* bottom, image */
+      url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHwwfA%3D%3D);
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* Banner - Tagline */
+main .hero h2{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+main .hero p{
+  /* border: solid 1px; */
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--main);
+  font-weight: 200;
+  font-size: 1em;
+  color: #fff;
+
+  height: 40px;
+}
+
+/* Beds Section */
+
+/* Button container */
+main .but_container{
+  /* border: solid 1px; */
+
+  padding: 4% 4%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+main .but_container button{
+
+  height: 8vh;
+  min-height: 40px;
+  max-height: 50px;
+
+  border-radius: 5px;
+
+  width: 100%;
+
+  font-family: montserrat;
+  font-size: 1.2em;
+
+  background-color: var(--orange);
+  color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+  padding: 2% 0% 0%;
+
+  background-color: #ffe2d1;
+}
+
+footer .l_t{
+  display: flex;
+
+  padding: 2% 0%;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer .l_t img{
+  width: 10%;
+  min-width: 30px;
+  max-width: 50px;
+}
+
+footer .l_t p{
+  width: 40%;
+  min-width: 200px;
+
+  font-size: 1em;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
+}
+
+
+/* Quick Links */
+
+footer .q_l{
+  padding: 2% 2% 4%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .copyright{
+  padding: 2%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #000;
+}
+
+footer .copyright p{
+  color: #fff;
+  font-family: montserrat;
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -590,6 +777,10 @@ header .menu-toggle{
 }
 
 /* MAIN */
+
+main{
+  min-height: 80vh;
+}
 
 /* Banner */
 main .banner{
@@ -742,7 +933,7 @@ main > h2{
   border-width: 0px 20px 0px 0px;
   border-color: var(--orange);
 
-  height: 8vh;
+  height: 10vh;
   min-height: 80px;
   max-height: 100px;
 
@@ -752,10 +943,10 @@ main > h2{
   padding: 0% 2%;
 
   font-family: var(--main);
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 600;
 
-  background-color: #515050;
+  background-color: var(--grey);
   color: #fff;
 
   /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
@@ -852,6 +1043,8 @@ main .about div h3{
   font-size: 2em;
   font-weight: 600;
 
+  text-align: center;
+
   font-family: var(--main);
 
   padding: 1% 2%;
@@ -859,20 +1052,122 @@ main .about div h3{
 
 /* Individual Founders Info */
 main .about div .ind_found{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+
+
   padding: 2% 2%;
 }
 
 main .about div .ind_found h4{
   font-size: 1.4em;
-  font-weight: 200;
+  font-weight: 400;
 
   padding: 2% 0%;
+
 
   font-family: var(--main);
 }
 
 main .about div .ind_found img{
-  width: 80%;
+  width: 70%;
+}
+
+/* Contact Us Page */
+
+/* Hero Section */
+main .hero{
+  /* border: solid 1px; */
+
+  height: 60vh;
+  min-height: 150px;
+  max-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 3%;
+
+  background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHwwfA%3D%3D);
+
+  background-size: cover;
+  background-position: 0px -110px;
+
+}
+
+/* Banner - Tagline */
+main .hero h2{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
+
+  padding: 2% 0%;
+
+  font-family: var(--main);
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+main .hero p{
+  /* border: solid 1px; */
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--main);
+  font-weight: 200;
+  font-size: 1.2em;
+  color: #fff;
+
+  height: 60px;
+
+}
+
+
+/* Beds Section */
+
+/* Button container */
+main .but_container{
+  /* border: solid 1px; */
+
+  padding: 2% 2%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+main .but_container button{
+
+  height: 6vh;
+  min-height: 50px;
+  max-height: 80px;
+
+  border-radius: 5px;
+
+  width: 100%;
+
+  font-family: montserrat;
+  font-size: 1.2em;
+
+  background-color: var(--orange);
+  color: #fff;
+
 }
 
 
@@ -884,6 +1179,70 @@ main .about div .ind_found img{
 
 
 
+
+
+
+
+
+
+/* Footer */
+
+footer{
+  padding: 2% 0% 0%;
+
+  background-color: #ffe2d1;
+}
+
+footer .l_t{
+  display: flex;
+
+  padding: 2% 0%;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer .l_t img{
+  width: 8%;
+  min-width: 30px;
+  max-width: 80px;
+}
+
+footer .l_t p{
+  width: 40%;
+  min-width: 320px;
+
+  font-size: 1.5em;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
+}
+
+
+/* Quick Links */
+
+footer .q_l{
+  padding: 2% 2% 4%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .copyright{
+  padding: 2%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #000;
+}
+
+footer .copyright p{
+  color: #fff;
+  font-family: montserrat;
+  font-size: 0.8em;
+}
 
 
 
@@ -1006,6 +1365,8 @@ header .menu-toggle{
 /* * MAIN * */
 main{
   font-size: 1.2rem;
+
+  min-height: 80vh;
 }
 
 /* Banner */
@@ -1177,9 +1538,9 @@ main > h2{
   border-color: var(--orange);
 
 
-  height: 15vh;
-  min-height: 100px;
-  max-height: 120px;
+  height: 20vh;
+  min-height: 120px;
+  max-height: 150px;
 
   display: flex;
   align-items: center;
@@ -1187,10 +1548,10 @@ main > h2{
   padding: 0% 2%;
 
   font-family: var(--main);
-  font-size: 2.2em;
+  font-size: 2.6em;
   font-weight: 600;
 
-  background-color: #515050;
+  background-color: var(--grey);
   color: #fff;
 
   /* text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
@@ -1253,7 +1614,7 @@ main section .categories{
 }
 
 main section .categories h3{
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 600;
 
   font-family: var(--main);
@@ -1313,6 +1674,175 @@ main .about div .ind_found h4{
 main .about div .ind_found img{
   width: 90%;
 }
+
+/* Contact Us Page */
+
+/* Hero */
+main .hero{
+  /* border: solid 1px; */
+
+  height: 70vh;
+  min-height: 150px;
+  max-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0% 3%;
+
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      /* bottom, image */
+      url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHwwfA%3D%3D);
+
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* Hero - Tagline */
+main .hero h2{
+  border-style: solid;
+  border-width: 0px 0px 4px 0px;
+  border-color: var(--orange);
+
+  padding: 1% 0%;
+
+  font-family: var(--main);
+  font-size: 3em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+main .hero p{
+  /* border: solid 1px; */
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--main);
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #fff;
+
+  height: 60px;
+
+}
+
+
+/* Beds Section */
+
+/* Button container */
+main .but_container{
+  /* border: solid 1px; */
+
+  padding: 1% 2%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+main .but_container button{
+
+  height: 8vh;
+  min-height: 60px;
+  max-height: 90px;
+
+  border-radius: 5px;
+
+  width: 60%;
+
+  font-family: montserrat;
+  font-size: 1.2em;
+
+  background-color: var(--orange);
+  color: #fff;
+
+}
+
+
+
+/* Footer */
+
+footer{
+  padding: 1% 0% 0%;
+  background-color: #ffe2d1;
+}
+
+footer .l_t{
+  /* border: 1px solid; */
+  display: flex;
+  float: left;
+  width: 50%;
+
+  padding: 0% 0% 1%;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer .l_t img{
+  width: 15%;
+  min-width: 30px;
+  max-width: 80px;
+}
+
+footer .l_t p{
+  width: 40%;
+  min-width: 300px;
+
+  font-size: 1.5em;
+  font-family: var(--main);
+  font-weight: 400;
+  color: var(--orange);
+}
+
+
+/* Quick Links */
+
+footer .q_l{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* border: 1px solid; */
+  padding: 2% 0%;
+
+}
+
+footer .q_l a{
+  font-size: 1.2em;
+
+}
+
+footer .copyright{
+  padding: 2%;
+  display: block;
+  width: 96%;
+
+  display: flex;
+  justify-content: center;
+
+
+  background-color: #000;
+}
+
+footer .copyright p{
+  color: #fff;
+  font-family: montserrat;
+  font-size: 0.8em;
+}
+
 
 
 
